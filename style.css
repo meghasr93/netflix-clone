@@ -1,0 +1,284 @@
+body{
+    margin: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    box-sizing: border-box; 
+    background-color: #000; 
+    color: #fff;
+}
+.hero-sec{
+ width: 100%;
+ height: 100vh;
+ overflow: hidden;
+ position: relative;
+}
+.bg-img{
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+}
+.tint{
+    background: rgba(0,0,0,.3);
+    background-image: linear-gradient(0deg,transparent 50%,rgba(0,0,0,.7)),radial-gradient(50% 100%,transparent 0,rgba(0,0,0,.7) 100%);
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+.nav{
+    width: 90vw;
+    position: absolute;
+    top: 60px;
+    left: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transform: translate(-50%, -50%);
+}
+.logo-img{
+    width: 100px;
+}
+.btns{
+    display: flex;
+    gap: 10px;
+}
+.lang-btn{
+    background-color: rgba(0,0,0,.7);
+    border: 1px solid rgba(237, 237, 237, 0.4);
+    color: #fff;
+    padding: 5px 8px;
+    border-radius: 4px;
+    display: inline-flex;
+    gap: 6px;
+    font-size: 14px;
+}
+.signin-btn{
+    color: #fff;
+    background-color: rgb(229,9,20);
+    border: none;
+    border-radius: 4px;
+    padding: 5px 10px;
+    font-size: 14px; 
+}
+.content{
+    width: 90vw;
+    text-align: center;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.hero-heading{
+    font-size: 2.7vmax;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+.sub-heading{
+    font-size: 1.3vmax;
+    margin-bottom: 38px;
+}
+.hearo-form input{
+    padding: 18px 40px 18px 15px;
+    background-color: rgba(0,0,0,.7);
+    border: 1px solid rgba(237, 237, 237, 0.4);
+    border-radius: 4px;
+    color: #fff;
+    font-size: 16px;
+    width: 70vw;
+}
+.hearo-form button{
+    color: #fff;
+    font-weight: 700;
+    font-size: 20px;
+    background-color: rgb(229,9,20);
+    border: none;
+    border-radius: 4px;
+    padding: 14px 25px;
+    margin-top: 15px;  
+}
+section{
+    border-bottom: 8px solid #222;
+}
+.container{
+    margin: 80px auto;
+    width: 90vw;
+}
+.left{
+    text-align: center;
+}
+.heading2{
+    font-size: 2.7vmax;
+}
+.p-heading{
+    font-size: 1.3vmax;
+}
+.tv-block{
+    position: relative;
+}
+.video-img{
+    width: 74%;
+    position: absolute;
+    top: 32vw;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.tv-bg{
+    width: 100%;
+    position: relative;
+}
+.faq-sec{
+    width: 90vw;
+    margin: 80px auto;
+    text-align: center;
+}
+.faq{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #303030;
+    padding: 14px 20px;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+.faq:hover{
+    background-color: #7a7a7a;
+}
+.faq h3{
+    margin: 0;
+    font-weight: normal;
+}
+
+/* media queries */
+/* medium screen */
+@media(min-width:586px) and (max-width:990px){
+    .lang-btn{
+        padding: 7px 12px;
+    }
+    .signin-btn{
+        padding: 7px 20px;
+    }
+    .hero-heading{
+        font-size: 4vmax;
+    }
+    .sub-heading{
+        font-size: 2.5vmax;
+    }
+    .hearo-form{
+        display: flex;
+        gap: 10px;
+        justify-content: center;
+    }
+    .hearo-form input{
+        width: 300px;
+    }
+    .hearo-form button{
+        padding: 7px 40px;
+        display: flex;
+        gap: 10px;
+        align-items: center;
+        margin-top: 0;
+    }
+    .btn-arrow{
+        margin-top: 5px;
+    }
+    .tv-block {
+        width: 70vw;
+        margin: auto;
+    }
+    .heading2{
+        font-size: 3vmax;
+    }
+    .video-img {
+        top: 25vw;
+    }
+    .faq{
+        padding: 18px 30px;
+        width: 80vw;
+        margin: 0 auto 10px;
+    }
+    .faq h3{
+        font-size: 26px;
+        margin-bottom: 10px;
+    }
+    .faq svg{
+        width: 35px;
+        height: 35px;
+    }
+}
+
+/* bigger screen */
+@media(min-width:990px) {
+    .logo-img{
+        width: 140px;
+    }
+    .lang-btn{
+        padding: 7px 12px;
+    }
+    .signin-btn{
+        padding: 7px 20px;
+    }
+    .hero-heading{
+        font-size: 4vmax;
+    }
+    .sub-heading{
+        font-size: 2.5vmax;
+    }
+    .content{
+        width: 70vw;
+    }
+    .hearo-form{
+        display: flex;
+        gap: 10px;
+        justify-content: center;
+    }
+    .hearo-form input{
+        width: 300px;
+    }
+    .hearo-form button{
+        padding: 7px 40px;
+        display: flex;
+        gap: 10px;
+        align-items: center;
+        margin-top: 0;
+    }
+    .btn-arrow{
+        margin-top: 5px;
+    }
+    .container{
+        display: flex;
+        gap: 80px;
+        align-items: center;
+    }
+    .heading2{
+        font-size: 3.7vmax;
+    }
+    .p-heading{
+        font-size: 1.7vmax;
+    }
+    .left {
+        width: 50%;
+        text-align: left;
+    }
+    .right{
+        width: 50%;
+    }
+    .video-img {
+        top: 13vw;
+    }
+    .faq{
+        padding: 21px 30px;
+        width: 70vw;
+        margin: 0 auto 10px;
+    }
+    .faq h3{
+        font-size: 26px;
+        margin-bottom: 10px;
+    }
+    .faq svg{
+        width: 35px;
+        height: 35px;
+    }
+}
+
+
